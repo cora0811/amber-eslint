@@ -1,0 +1,28 @@
+{
+  "name": "my-eslint",
+  "version": "1.0.0",
+  "description": "my-eslint",
+  "main": "./lib/api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "my-eslint": "./bin/my-eslint.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinming08Li/my-eslint.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/jinming08Li/my-eslint/issues"
+  },
+  "homepage": "https://github.com/jinming08Li/my-eslint#readme",
+  "devDependencies": {},
+  "engines": {
+    "node": "^10.12.0 || >=12.0.0"
+  }
+}
