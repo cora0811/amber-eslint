@@ -17,7 +17,7 @@ function onFatalError(error) {
   console.error(`
     Oops! Something went wrong! :(
 
-    AelfESLint: ${version}
+    AelfLint: ${version}
 
     ${error}`);
 }

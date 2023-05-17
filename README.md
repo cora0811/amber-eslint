@@ -13,7 +13,7 @@ aelftsconfig.json是一些基础配置
 generate-husky.js：生成.husky 和 commit-msg/pre-commit文件，并授权(chmod +x .husky/pre-commit / chmod +x .husky/commit-msg)
 
 # 使用
-项目中通过npm安装，运行 yarn my-eslint 后：
+项目中通过npm安装，运行 yarn amber-lint 后：
 1. 自动安装eslint / prettier等插件
 2. 生成相关的配置文件(commitlint.config.js / .editorconfig / .eslintrc / .prettierrc / .stylelintrc.json / aelftsconfig.json)、
 3. 运行npx husky install，生成.husky并生成commit-msg 和 pre-commit
