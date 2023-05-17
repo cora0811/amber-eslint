@@ -1,20 +1,18 @@
-# amber-eslint
+# amber-lint
 
-配置内容在文件：lib/config.js
+amber-lint is used to configure eslint, prettier, stylelint, commitlint, husky, etc., as well as generate relevant configuration files to unify and standardize the code style in the project.
 
-lint-staged-config.js中 更改了package.json中的lint-staged
-我们现在的项目配置基本是 "eslint --cache --fix" 和 "eslint . --ext .js,.jsx,.ts,.tsx",
-新增："tsc --noEmit --jsx react-jsx --allowJs" "jest --bail --findRelatedTests"
-可以在有ts报错的时候，禁止提交代码
+# Installation and Usage
 
-ts-config.js 生成了一个aelftsconfig.json文件，为了不覆盖项目中已有的tsconfig
-aelftsconfig.json是一些基础配置
+You can install amber-lint using this command:
+`yarn add amber-lint`
+or
+`npm install amber-lint`
 
-generate-husky.js：生成.husky 和 commit-msg/pre-commit文件，并授权(chmod +x .husky/pre-commit / chmod +x .husky/commit-msg)
+Then you can run `yarn amber-lint` or `npx amber-lint` to generate the configuration files and install the dependencies.
+You can make modifications based on this or use it directly.
 
-# 使用
-项目中通过npm安装，运行 yarn amber-lint 后：
-1. 自动安装eslint / prettier等插件
-2. 生成相关的配置文件(commitlint.config.js / .editorconfig / .eslintrc / .prettierrc / .stylelintrc.json / aelftsconfig.json)、
-3. 运行npx husky install，生成.husky并生成commit-msg 和 pre-commit
-4. 修改package.json中的lint-staged
+# Notice
+
+1. The generated file aelftsconfig.json is the basic configuration of tsconfig.json. If the tsconfig.json file already exists in the project, you need to manually copy the contents of aelftsconfig.json to tsconfig.json. **Note: keep your own configuration in the project.**
+If there is no tsconfig.json file, you can directly rename the aelftsconfig.json file to tsconfig.json and use it directly.
