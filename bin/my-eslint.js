@@ -37,6 +37,8 @@ function onFatalError(error) {
         return;
       }
       console.log('\n\nPlugins has been installed for your project!\n\n');
+
+      // Generate Configuration File
       eslint()
       prettier()
       stylelint()
