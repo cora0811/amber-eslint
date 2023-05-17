@@ -1,4 +1,4 @@
-# my-eslint
+# amber-eslint
 
 配置内容在文件：lib/config.js
 
