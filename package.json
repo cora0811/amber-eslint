@@ -1,6 +1,6 @@
 {
   "name": "amber-lint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "amber-lint",
   "main": "./lib/api.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "amber-lint": "./bin/amber-lint.js"
   },
   "keywords": [
-    "lint"
+    "amber-lint"
   ],
   "author": "",
   "devDependencies": {},
